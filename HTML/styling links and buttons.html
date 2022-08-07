@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links & Buttons</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: finlandica
+        }
+
+        .container{
+            border: 4px solid #d63131;
+            background-color: #c5ffa6;
+            width: 555px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 5px 35px;
+        }
+
+        h3{
+            border-bottom: 4px solid #d63131;
+            padding-bottom: 12px
+        }
+
+        .btn{
+            margin: 0px auto;
+        }
+        .primaryButton{
+            margin-right: 25px;
+            text-decoration: none;
+            border:4px solid orange;
+            border-radius: 9px;
+            font-weight: bold;
+            padding: 1px 8px;
+            color: #b33812;
+        }
+
+        .primaryButton:hover{
+            /* border-color: #b33812; */
+            background-color: white;
+        }
+
+        .primaryButton:visited{
+            color: #7a6767;
+        }
+
+        .primaryButton:active{
+            border-color: black;
+            color: black;
+        }
+
+        .secondaryButton{
+            padding: 1px 8px;
+            background-color: #76ef76;
+            border: 3px solid #127464;
+            border-radius: 9px;
+            font-size: 15px;
+            padding: 3px 11px;
+            color: #1a6459;
+            font-weight: 550;
+            cursor: pointer;
+        }
+
+        .secondaryButton:hover{
+            background-color: white;
+        }
+
+        .secondaryButton:active{
+            border-color: black;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="con1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, explicabo velit alias esse officiis ipsum sapiente voluptate ad dolorum voluptatum earum nobis doloribus iusto omnis repellendus eaque voluptatem quae sint odit porro suscipit. Eos repellendus, molestiae fuga magnam provident nihil!</p>
+
+        <div class="btn">
+            <a href="https:www.gooogle.com" class="primaryButton">Read More</a>
+            <button type="submit" class="secondaryButton">Sign in</button>
+        </div>
+    </div>
+</body>
+</html>

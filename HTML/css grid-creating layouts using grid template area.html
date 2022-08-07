@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Layouts Using Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar navbar'
+            'section section section section aside'
+            'footer footer footer footer footer';
+
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            border: 4px solid orangered;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quod sunt iste reiciendis amet pariatur fuga reprehenderit nulla repudiandae minus?</div>
+
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, magnam! Quisquam nihil quis, obcaecati debitis doloremque nostrum deleniti? Itaque repellendus officiis iure quam! Ipsam, natus nobis ullam, libero rem enim sit hic, neque amet nemo voluptates aliquid veniam quas sint voluptate porro! Repellendus, labore! Unde tenetur odio voluptatibus nulla repudiandae a magni quibusdam sed eaque. Ipsa, nostrum vitae eligendi delectus ad, quod et tempore repellat omnis expedita dolorem est fuga vel dolores? Recusandae, libero neque deleniti temporibus veniam facere maiores reprehenderit iusto explicabo! Recusandae cum delectus libero asperiores. Nihil, voluptatibus sit incidunt corrupti non libero odio. Officia saepe ex quis obcaecati labore vel dolore culpa laboriosam asperiores repellat? Nam beatae error magnam facilis rem officia quis ullam? Error quo incidunt laboriosam nemo aut id quisquam voluptatem dolore atque, debitis, beatae alias facere quaerat illo labore. Harum tempore amet dignissimos repellendus eveniet eos quas, beatae, quos velit pariatur vitae quae inventore dolor, alias nihil rerum eum debitis quo in autem tempora magni id! Illo, praesentium doloremque! Adipisci, ab aliquam quos sequi voluptatibus debitis neque laboriosam ex, distinctio veniam deserunt corporis, odit voluptatum dolore nam blanditiis ad repellat nisi earum dolorum! Dicta, sunt totam. Provident natus quasi mollitia sit fuga cumque neque!</div>
+
+        <div id="aside" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur id ratione expedita voluptatem. Beatae veniam natus voluptate. Voluptas beatae autem sit, magni obcaecati tempora? Aliquam, accusantium atque laboriosam odio labore cupiditate saepe ea consequatur et, quidem, omnis illo obcaecati cumque eum sint numquam. Magni dolor atque necessitatibus ea molestiae maiores iusto! Totam quos sunt voluptatem reprehenderit aliquam delectus minus vero minima distinctio natus aliquid sed facilis incidunt unde, eum similique qui sapiente asperiores maiores debitis libero dignissimos accusamus voluptate. Inventore vel dolor vitae enim totam sed quasi laborum fugit eveniet in labore numquam at non, maxime necessitatibus quaerat architecto minima.</div>
+
+        <div id="footer" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eos! Cum veniam quo aliquam modi aut, voluptatum veritatis odit doloribus reprehenderit id! Tempora, aliquid repellat molestias cupiditate quam eveniet voluptates.</div>
+    </div>
+</body>
+</html>

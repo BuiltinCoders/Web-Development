@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Spanning Multiple Rows and Columns</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 2fr);
+            grid-template-rows: repeat(3, 40px);
+            /* grid-column-gap: 2rem; */
+            /* grid-row-gap: 1rem; */
+            grid-gap: 1rem;
+        }
+        .item{
+            background-color: orange;
+            border: 2px solid orangered;
+            padding: 5px 10px;
+        }
+
+        /* nth-child is used to target specific cell in the grid */
+        .item:nth-child(1){
+            /* how to increase adjust each cell saparetely */
+            /* through this size of one cell is adjusted in accordance with other cells */
+
+            /* first way */
+
+            /* position of column */
+            /* grid-column-start: 1; */
+            
+            /* occupy the space of 3 lines of columns */
+            /* grid-column-end: 3; */
+            
+            
+            /* position of row */
+            /* grid-row-start: 1; */
+
+            /* occupy the space of 3 lines of rows */
+            /* grid-row-end: 3; */
+
+            /* second way */
+            /* grid-column: position of column / occupy the space which is equal to 3 cells */
+            grid-column: 1 / span 3;
+            /* grid-row: position of row / occupy the space which is equal to 3 cells */
+            grid-row: 1/span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-11</div>
+        <div class="item">This is item-12</div>
+        <div class="item">This is item-13</div>
+        <div class="item">This is item-14</div>
+        <div class="item">This is item-15</div>
+    </div>
+</body>
+</html>

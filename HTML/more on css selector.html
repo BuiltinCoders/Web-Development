@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+        /* div p{
+            color: white;
+            background-color: brown;
+        } */
+
+        /* selecting who are direct child of p */
+        /* div > p{
+            color: yellow;
+            background-color: green;
+        } */
+
+        /* selecting the p whose previous sibling is div */
+        div + p{
+            color: orange;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a main heading</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is a paragraph inside li</p></li>
+                <li>This will not be affected</li>
+                <p>This is a paragraph inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is second paragraph</p>
+    </div>
+    <p>This is the outermost paragraph</p>
+</body>
+</html>

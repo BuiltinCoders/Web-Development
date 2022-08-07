@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+    <style>
+        /* universal selectors */
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: #559055f0;
+        }
+        .container{
+            background-color:brown;
+            color: white;
+            border: 4px solid orange;
+
+            /* padding for all four sides */
+            padding: 23px;
+
+            /* padding for all individual four sides */
+            /* padding-top: 12px;
+            padding-right: 20px;
+            padding-bottom: 25px;
+            padding-left: 30px; */
+
+            /* padding: top right bottom left; */
+            /* padding: 12px 20px 25px 30px; */
+
+            /* padding: (top&bottom) (left&right) */
+            /* padding: 12px 23px; */
+
+            margin: 23px;
+            /* other margin */
+            /* margin-top, margin-right, margin-bottom, margin-left */
+            /* margin: top right bottom left; */
+            /* margin: (top&bottom) (left&right); */
+
+            width: 232px;
+            border-radius: 23px;
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is first heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosamipsa tempora similique ex reprehenderit corrupti quam eaque consectetur?Inventore, aliquid!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is second heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosamipsa tempora similique ex reprehenderit corrupti quam eaque consectetur?Inventore, aliquid!</p>
+    </div>
+    <div class="container">
+        <h3>This is third heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosamipsa tempora similique ex reprehenderit corrupti quam eaque consectetur?Inventore, aliquid!</p>
+    </div>
+</body>
+</html>

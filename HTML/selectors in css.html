@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Four types of selectors: */
+
+        /* Element Selector */
+        h3{
+            color: yellow;
+            background-color: green;
+            border: 4px solid orangered;
+        }
+
+        /* id selectors */
+        #first{
+            color: yellow;
+            background-color: orange;
+        }
+        
+        /* class selectors */
+        .para{
+            color:white;
+            background-color: brown;
+        }
+
+        /* grouping selectors */
+        span, footer{
+            color: white;
+            background-color:rgb(135, 42, 223);
+        }
+    </style>
+</head>
+<body>
+    <h3 id="heading">Selectors in CSS</h3>
+    <p id="first" class="para">This is a first paragraph</p>
+    <p class="para">This is a second paragraph</p>
+    <p class="para">This is a third paragraph</p>
+    <p class="para">This is a fourth paragraph</p>
+
+    <span>This is a span</span>
+    <footer>This is footer of this page</footer>
+
+</body>
+</html>

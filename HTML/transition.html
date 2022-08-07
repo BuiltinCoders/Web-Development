@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            /* Transition Effect */
+            /* transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+
+            /* shorthand for transition effect */
+            /* transition: transition-property transition-duration transition-timing-function transition-delay; */
+            /* transition: background-color 1s ease-in-out 0s; */
+            transition: all 1s ease-in-out 0s;
+
+        }
+        .box:hover{
+            background-color: orange;
+            height: 300px;
+            width: 300px;
+            border: 4px solid orangered;
+            border-radius: 530px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

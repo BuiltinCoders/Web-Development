@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+    <style>
+        body{
+            background-color: rgb(36, 36, 36);
+        }
+        .container{
+            background-color: greenyellow;
+            border-radius: 23px;
+            /* height: 40%; */
+        }
+        #box-1{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            border-radius: 130px;
+            animation-name: loading;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            /* alternate mode = animation will get to its starting point 
+            forwards mode = animation will remain set to its ending position
+            */
+            /* animation-delay: 2s; */
+            
+            animation-timing-function: ease-in-out;
+            /* 
+            ease-in = animation will start fast and end slow
+            ease-out = animation will start slow and end fast
+            ease-in-out = animation will start slow and end slow
+            */
+
+            animation-direction: normal;
+            /* normal = it will start the animation normally
+            reverse = it will start the animation in reverse
+            */
+        }
+
+
+        @keyframes loading{
+            from{
+                width: 40px;
+            }
+            to{
+                width: 100%;
+            }
+        }
+
+        #box-2{
+            z-index: 233;
+            background-color: orange;
+            height: 40px;
+            width:  40px;
+            border-radius: 130px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+
+            /* animation-name: orange-loading;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards; */
+
+            /* animation shorthand */
+            /* animation : animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+            animation: orange-loading 5s ease-in-out 0s 1 forwards;
+        }
+
+        @keyframes orange-loading {
+            0%{
+                top: 8px;
+                left: 8px;
+            }
+            33%{
+                top: 100px;
+                left: 8px;
+
+            }
+            66%{
+                top: 100px;
+                left: 95.2%;
+            }
+            100%{
+                top: 8px;
+                left: 95.2%;
+            }
+            /* 100%{
+                top: 8px;
+                left: 8px;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+    </div>
+</body>
+</html>

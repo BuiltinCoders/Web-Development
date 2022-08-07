@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 100%;
+            border: 4px solid red;
+
+            /* initializing the container as a flex */
+            display: flex;
+
+            /* properties for flex container */
+
+            /* 1. Flex Direction - to adjust the direction of flex item in the flex container */
+            /* flex-direction: row;  - (default value) */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* 2. Flex Wrap -  to wrap the flex items in the container */
+            /* flex-wrap: nowrap; - (default value)*/
+            /* flex-wrap: wrap;  - wrap form top to bottom */
+            /* flex-wrap: wrap-reverse;  - wrap form bottom to top */
+
+            /* -------------- shorthand for flex-direction and flex-wrap ----- */
+            /* flex-flow: row-reverse wrap-reverse; */
+
+            /* 3. Justify-content - used to horizontly center  the flex items in the flex container also distribute spaces between the flex items in the flex container */
+            /* justify-content: center; - used to center flex items */
+            /* justify-content: space-between; - used to divide flex items equaly */
+            /* justify-content: space-evenly; - used to give equal spaces between the flex items */
+            /* justify-content: space-around; - used to give to give equal spaces around each flex items */
+
+            /* 4. Align items - used to vertically center the flex items in the flex container also used to distribute spaces between flex items vertically */
+            /* align-items: center; - used to center flex items vertically */
+            /* align-items: flex-start; - used to set flex items in the upper position of flex container */
+            /* align-items: flex-end; - used to set flex items in the bottom postion of the flex container */
+            /* align-items: stretch; */
+        }
+
+        .item{
+            border: 4px solid orange;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* properties for flex items */
+        #item-1{
+            /* 1. order - used to define the order of flex item - higher the order value will let the flex items to display last in the flex items */
+            /* order: 40; */
+
+            /* 2. Flex Grow - used to define ratio of flex item to grow when given chance to grow */
+            /* higer the value of flex grow will let the flex item to grow faster than others */
+            /* flex-grow: 3; */
+
+            /* 3. Flex Shrink - used to define the ratio of flex item to shrink when given chance to shrink */
+            /* higher the value of flex shrink will let the flex item to shrink faster than others */
+            /* flex-shrink: 3; */
+
+            /* 4. Flex Basis - used to change the size of the flex item */
+            /* if flex direction set to row then flex basis will control width of the flex item and flex direction set to column then it will control the height of the flex item */
+            /* flex-basis: 200px; */
+
+            /* ----------------- shorthand for flex-grow, flex-shrink and flex-basis ----------------- */
+            /* flex: 2 2 200px; */
+
+            /* 5. Align Self - used to change the position of individual flex item to flex-start, flex-end and center */
+            /* align-self: flex-start; */
+            align-self: center;
+            /* align-self: flex-end; */
+        }
+        #item-2{
+            /* order: 400; */
+            flex-grow: 1;
+            /* flex-shrink: 4; */
+            /* flex-basis: 300px; */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flexbox</h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box shadow and text shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .box {
+        /* border: 2px solid orangered; */
+        border-radius: 3px;
+        background-color: orange;
+        padding: 3px 21px;
+        text-align: center;
+        margin: 4px 6px;
+
+        /* box shadow = x-axis y-axis blur-radius spread-radius color */
+        /* box-shadow: -3px -4px 5px black; '-' value to reverse the direction of shadow */
+        box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.668);
+
+        /* shadow in front of the box */
+        /* box-shadow: inset 3px 4px green; */
+
+        /* multiple box shadow */
+        box-shadow: 3px 4px green, 8px 8px black;
+
+    }
+    .box h2{
+        text-shadow: 3px 4px 4px white;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">
+        <h2>Box 1</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab aliquam
+          adipisci saepe provident iure optio quos reiciendis facilis sapiente
+          temporibus accusamus, ea animi quaerat laborum hic. Facilis pariatur
+          beatae ullam?
+        </p>
+      </div>
+      <div class="box" id="box-2">
+        <h2>Box 2</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab aliquam
+          adipisci saepe provident iure optio quos reiciendis facilis sapiente
+          temporibus accusamus, ea animi quaerat laborum hic. Facilis pariatur
+          beatae ullam?
+        </p>
+      </div>
+      <div class="box" id="box-3">
+        <h2>Box 3</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab aliquam
+          adipisci saepe provident iure optio quos reiciendis facilis sapiente
+          temporibus accusamus, ea animi quaerat laborum hic. Facilis pariatur
+          beatae ullam?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

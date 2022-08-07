@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background</title>
+    <style>
+        #firstPara{
+            height: 85px;
+            width: 215px;
+            background-color:brown;
+            color: white;
+            border-width: 4px;
+            border-style: solid;
+            border-color: orange;
+            border-radius: 7px;
+        }
+
+        #secondPara{
+            height: 85px;
+            width: 215px;
+            background-color: orange;
+            color: white;
+            border-top: 4px solid red;
+            border-right: 4px solid green;
+            border-bottom: 4px solid orangered;
+            border-left: 4px solid blueviolet;
+
+            border-top-left-radius: 3px;
+            border-top-right-radius: 7px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 12px;
+        }
+
+        #thirdPara{
+            height: 200px;
+            width: 215px;
+            background-image: url('https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png');
+            background-size: 50px;
+            border: 4px solid red;
+            /* background-repeat: repeat-x; */    /*for repeation on x-axis*/
+            /* background-repeat: repeat-y; */   /*for repeation on y-axis*/
+            background-repeat: no-repeat;    /*for no repeation of background image*/
+
+            /* position the background image */
+            /* background-position: center, center; */
+            /* background-position: 120px, 50px; */
+            /* background-position: top, center; */
+            background-position: bottom, right;
+
+            /* background-position: top-center-bottom, left-center-right */
+        }
+    </style>
+</head>
+<body>
+    <h3>This is first heading</h3>
+    <p id="firstPara">this is a first paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">this is a second paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdPara">this is a third paragraph</p>
+</body>
+</html>

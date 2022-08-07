@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: finlandica;
+        }
+        /* display property is used to change the property inline to block and block to inline */
+        header{
+            border: 4px solid red;
+            /* margin: auto; */
+            /* width: 15%; */
+        }
+        img{
+            display: block;
+            /* block: block element occupy the whole line and throw the next element in the next element */
+            width: 83px;
+            margin: auto;
+        }
+        h3{
+            /* display: inline; */
+            /* inline : inline element has only the required space */
+            /* border: 4px solid green; */
+            width: 15%;
+            margin: auto;
+            text-align: center;
+        }
+        .box{
+            border: 4px solid orange;
+            background-color: rgba(0, 199, 149, 0.452);
+            margin: 10px 0.1px;
+            padding: 12px 12px;
+            display: inline-block;
+            /* inline-block: inline-block is used on block element to convert block element into inline element and also use the width property as width property can't be used on inline element */
+            width: 33%;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="../Asserts/background.jpg" alt="logo">
+        <h3>Welcome to this webpage</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam magni qui, consectetur eum dolorum laborum eaque quas commodi beatae neque temporibus at, blanditiis veritatis impedit ratione debitis esse eligendi corporis autem. Deleniti neque at et fuga rerum architecto sunt. Veritatis?</p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam magni qui, consectetur eum dolorum laborum eaque quas commodi beatae neque temporibus at, blanditiis veritatis impedit ratione debitis esse eligendi corporis autem. Deleniti neque at et fuga rerum architecto sunt. Veritatis?</p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam magni qui, consectetur eum dolorum laborum eaque quas commodi beatae neque temporibus at, blanditiis veritatis impedit ratione debitis esse eligendi corporis autem. Deleniti neque at et fuga rerum architecto sunt. Veritatis?</p>
+        </div>
+    </div>
+</body>
+</html>

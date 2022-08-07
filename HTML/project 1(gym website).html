@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/project 1(gym website).css">
+    <title>Gym Website</title>
+</head>
+<body>
+    <header>
+        <div class="headItem" id="headLeft">
+            <img src="../Asserts/gym-project/pixlr-bg-result.png" alt="logo">
+        </div>
+
+        <div class="headItem" id="headCenter">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Exercise</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="headItem" id="headRight">
+            <a href="#" class="primaryButton">Sign In</a>
+        </div>
+    </header>
+
+    <div class="registration_form">
+        <h2>Registration Form</h3>
+            <div class="formGroup">
+                <form action="action.php">
+                    <div class="name form_content">
+                        <label for="username" class="formLabel">Name: </label>
+                        <input type="text" name="username" id="username" class="inputBox">
+                    </div>
+                    <div class="gender form_content">
+                        <label for="mygender" class="formLabel">Gender: </label>
+                        <input type="radio" name="gender" id="mgender">
+                        <label for="mgender" class="formradio">Male</label>
+                        <input type="radio" name="gender" id="fgender">
+                        <label for="fgender" class="formradio">Female</label>
+                        <input type="radio" name="gender" id="ogender">
+                        <label for="ogender" class="formradio">Other</label>
+                    </div>
+
+                    <div class="timing form_content">
+                        <label for="timing" class="formLabel">Prefered-Timing: </label>
+                        <select name="timing" id="timing" class="inputBox">
+                            <option value="9AM-11AM">9Am - 11AM</option>
+                            <option value="7PM-9PM">7PM - 9PM</option>
+                        </select>
+                    </div>
+
+                    <div class="phnumber form_content">
+                        <label for="phnumber" class="formLabel">Phone Number: </label>
+                        <input type="text" name="phnumber" id="phnumber" class="inputBox">
+                    </div>
+
+                    <div class="trainer form_content">
+                        <label for="trainer" class="formLabel">Trainer: </label>
+                        <input type="radio" name="trainer" id="ytrainer">
+                        <label for="ytrainer" class="formradio">Yes</label>
+                        <input type="radio" name="trainer" id="ntrainer">
+                        <label for="ntrainer" class="formradio">No</label>
+                    </div>
+
+                    <div class="email form_content">
+                        <label for="email" class="formLabel">Email: </label>
+                        <input type="email" name="email" id="email" class="inputBox">
+                    </div>
+                    
+                    <div class="btn form_content">
+                        <input type="reset" value="Reset" class="resetBtn sbtn">
+                        <input type="submit" value="Submit" class="submitBtn sbtn">
+                    </div>
+                </form>
+            </div>
+    </div>
+
+</body>
+</html>

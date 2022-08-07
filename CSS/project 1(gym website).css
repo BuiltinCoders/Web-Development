@@ -1,0 +1,192 @@
+/* reseting css */
+body{
+    font-family: finlandica;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: Url("../Asserts/gym-project/pexels-victor-freitas-841130\ \(1\).jpg")
+}
+
+/* -------------------HEADER */
+header{
+    background-color: #1515158a;
+    height: 50px;
+    position: sticky;
+}
+.headItem{
+    color: white;
+}
+/* header-left */
+#headLeft{
+    /* float: left; */
+    /* border: 4px solid red; */
+    display: inline-block;
+    margin-top: -15px;
+    margin-left: -1px;
+}
+
+/* header-center */
+#headCenter{
+    /* float: left; */
+    /* border: 4px solid green; */
+    display: block;
+    width: 450px;
+    margin: -72px auto;
+}
+
+/* header-right */
+#headRight{
+    /* float: left; */
+    /* border: 4px solid yellow; */
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 14px;
+}
+
+/* ------------------- NAVBAR */
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    /* font-size: 19px; */
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    color: #00A371;
+}
+
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* ------------------------LOGO */
+#headLeft img{
+    filter: invert(100%);
+    height: 94px;
+    margin: -7px
+}
+
+/* ------------------------ sign in button*/
+.primaryButton{
+    text-decoration: none;
+    color: white;
+    border: 4px solid white;
+    border-radius: 25px;
+    padding: 3px 12px;
+}
+
+/* ------------------------- FORM */
+.registration_form{
+    color: white;
+    /* border: 2px solid orange; */
+    text-align: center;
+    margin-top: 23px;
+}
+
+.registration_form h2{
+    background-color: #ffffff;
+    color: #00A371;
+    width: 230px;
+    margin: auto;
+    padding: 3px 0px;
+}
+
+form{
+    color: white;
+    border: 4px solid white;
+    height: 318px;
+    width: 587px;
+    border-radius: 11px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.formLabel{
+    font-size: 24px;
+    /* float: left; */
+}
+
+.inputBox{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: finlandica;
+}
+
+.sbtn{
+    font-family: finlandica;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 2px 16px;
+    margin: 12px 12px;
+}
+
+.sbtn:hover{
+    background-color: #00A371;
+}
+
+.formGroup{
+    margin: 12px auto;
+}
+
+#gender{
+    margin: 13px 14px;
+}
+
+.formradio{
+    font-size: 18px;
+}
+
+.form_content{
+    margin: 13px 14px;
+}
+
+.name{
+    width: 50%;
+    margin: 13px auto;
+}
+.name input{
+    margin-left: 58px;
+}
+
+.gender{
+    width: 70%;
+    margin: 13px 114px;
+}
+.gender #mgender{
+    margin-left: 60px;
+}
+
+.timing{
+    margin-left: -142px;
+}
+.timing #timing{
+    margin-left: 58px;
+}
+
+.phnumber{
+    margin-left: -76px;
+}
+.phnumber #phnumber{
+    margin-left: 58px;
+}
+
+.trainer{
+    margin-left: -52px;
+}
+.trainer #ytrainer{
+    margin-left: 58px;
+}
+
+.email{
+    margin-left: 10px;
+}
+.email #email{
+    margin-left: 58px;
+}
