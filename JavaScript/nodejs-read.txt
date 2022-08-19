@@ -1,0 +1,1 @@
+This is a content that to be read by the node js module by fs module.
